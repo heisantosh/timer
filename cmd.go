@@ -24,11 +24,11 @@ timer expires.
 List of available options
 	-t,time TIME        time value
 	-s,sound NAME       play this sound after timer expires
-	-l,sounds             show the list of available sounds
+	-l,sounds           show the list of available sounds
 	-n,notify           show notification
 	-a,addsound FILE    add FILE to the sound library
-	-d,deletesound NAME	remove the sound named NAME from the sound library
-	-v,verbose			if true print more details on error
+	-d,deletesound NAME remove the sound named NAME from the sound library
+	-v,verbose          if true print more details on error
 	-h,help             show this help information
 
 Command to play the sound is read from the environment variable SOUND_CMD.
@@ -46,7 +46,7 @@ Time value is of the format 1h20m30s. Some valid examples are:
 	100s        time of 100 seconds
 	2m200s      time of 2 minutes 200 seconds
 
-By default the audacious will be used to pla the sound. The default command is:
+By default the audacious applicatoin will be used to play the sound. The default command is:
 	audacious -H -q FILE
 
 where FILE is the location of the audio file.

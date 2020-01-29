@@ -12,7 +12,7 @@ Using go get:
 
 ## Usage
 
-```bash
+```
 $ timer -help
 timer version 0.0.1
 
@@ -44,7 +44,7 @@ Time value is of the format 1h20m30s. Some valid examples are:
 	100s        time of 100 seconds
 	2m200s      time of 2 minutes 200 seconds
 
-By default the audacious will be used to pla the sound. The default command is:
+By default the audacious application will be used to play the sound. The default command is:
 	audacious -H -q FILE
 
 where FILE is the location of the audio file.
