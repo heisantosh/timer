@@ -1,6 +1,6 @@
 # timer
 
-A CLI application to run timers.
+A CLI application to run a timer with sound and notification
 
 ⏲
 
@@ -22,11 +22,11 @@ timer expires.
 List of available options
 	-t,time TIME        time value
 	-s,sound NAME       play this sound after timer expires
-	-l,sounds             show the list of available sounds
+	-l,sounds           show the list of available sounds
 	-n,notify           show notification
 	-a,addsound FILE    add FILE to the sound library
-	-d,deletesound NAME	remove the sound named NAME from the sound library
-	-v,verbose			if true print more details on error
+	-d,deletesound NAME remove the sound named NAME from the sound library
+	-v,verbose          if true print more details on error
 	-h,help             show this help information
 
 Command to play the sound is read from the environment variable SOUND_CMD.
