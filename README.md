@@ -2,7 +2,8 @@
 
 A CLI application to run a timer with sound and notification
 
-⏲
+<img src="https://raw.githubusercontent.com/heisantosh/timer/master/demo.svg?sanitize=true">
+
 
 ## Installation
 
