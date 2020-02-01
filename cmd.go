@@ -175,7 +175,7 @@ func (cmd *Cmd) timed() error {
 	done := make(chan struct{})
 
 	fmt.Printf("\r                                                        ")
-	fmt.Printf("\r⏲  %03d%% [passed: %v, remaining: %v, total: %v]", 0, 0, t, t)
+	fmt.Printf("\r⏲  %3d%% [passed: %v, remaining: %v, total: %v]", 0, 0, t, t)
 
 	go func() {
 		pc := 10
@@ -184,7 +184,7 @@ func (cmd *Cmd) timed() error {
 			select {
 			case <-ticker.C:
 				fmt.Printf("\r                                                        ")
-				fmt.Printf("\r⏲  %03d%% [passed: %v, remaining: %v, total: %v]", pc, passed, t-passed, t)
+				fmt.Printf("\r⏲  %3d%% [passed: %v, remaining: %v, total: %v]", pc, passed, t-passed, t)
 				passed += unit
 				pc += 10
 			case <-done:
