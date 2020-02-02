@@ -170,23 +170,23 @@ func (cmd *Cmd) timed() error {
 		return err
 	}
 
-	unit := t / 10
-	ticker := time.NewTicker(t / 10)
+	unit := t / 100
+	ticker := time.NewTicker(t / 100)
 	done := make(chan struct{})
 
-	fmt.Printf("\r                                                        ")
+	fmt.Printf("\r                                                                                 ")
 	fmt.Printf("\r⏲  %3d%% [passed: %v, remaining: %v, total: %v]", 0, 0, t, t)
 
 	go func() {
-		pc := 10
+		pc := 1
 		passed := unit
 		for {
 			select {
 			case <-ticker.C:
-				fmt.Printf("\r                                                        ")
+				fmt.Printf("\r                                                                         ")
 				fmt.Printf("\r⏲  %3d%% [passed: %v, remaining: %v, total: %v]", pc, passed, t-passed, t)
 				passed += unit
-				pc += 10
+				pc ++
 			case <-done:
 				return
 			}
