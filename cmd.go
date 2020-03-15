@@ -335,6 +335,7 @@ func (cmd *Cmd) Run() {
 	flag.StringVar(&cmd.args.time, "t", "", "time value")
 	flag.StringVar(&cmd.args.sound, "sound", "", "play this sound after timer expires")
 	flag.StringVar(&cmd.args.sound, "s", "", "play this sound for 10 seconds when the timer expires")
+	flag.BoolVar(&cmd.args.sounds, "l", false, "show the list of available sounds")
 	flag.BoolVar(&cmd.args.sounds, "sounds", false, "show the list of available sounds")
 	flag.BoolVar(&cmd.args.notify, "notify", false, "show notification")
 	flag.BoolVar(&cmd.args.notify, "n", false, "show notification")
